@@ -1,0 +1,30 @@
+.header {
+  height: 230px;
+  #gradient > .vertical(#111, transparent, 15%);
+  margin-bottom: -180px;
+
+  hr {
+    margin: 0;
+    border-top: 1px solid #060606;
+    border-bottom: 1px solid #1a1a1a;
+  }
+}
+
+.top-tiny {
+  &:extend(.clearfix all);
+  height: 32px;
+  padding: 12px 0;
+  background-color: #111;
+
+
+  > .list-inline {
+    font-size: 11px;
+
+    > li {
+
+      > a {
+        color: #fff;
+      }
+    }
+  }
+}

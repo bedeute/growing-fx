@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "master": {
+      "title": "Growingfx :: Master",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Growingfx"
+    },
+    "index": {
+      "title": "Growingfx :: Home",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Growingfx"
+    }
+  }
+}
