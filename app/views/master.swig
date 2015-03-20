@@ -26,11 +26,13 @@
 
   <!-- @if NODE_ENV == 'DEVELOPMENT' -->
   <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <!--head:js-->
   <!--/head:js-->
   <!-- @endif -->
 
   <!-- @if NODE_ENV == 'DISTRIBUTION' -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/app.min.css">
   <script src="scripts/head.all.min.js"></script>
   <!-- @endif -->
@@ -45,7 +47,7 @@
 
     <div class="breaker"></div>
   </div> <!--/.wrap-->
-
+  <div class="spacing"> </div>
   {% include "layouts/footer.swig" %}
 
   <!-- @if NODE_ENV == 'DEVELOPMENT' -->

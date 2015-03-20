@@ -36,7 +36,7 @@ opts.src = {
       'app/scripts/app.js'
     ]
   },
-  fonts: 'app/resources/fonts/**/*.*',
+  fonts: ['app/resources/fonts/**/*.*', 'bower_components/font-awesome/fonts/**/*.*'],
   images: ['app/images/**/*.*', '!app/images/sprite/*.*'],
   sprite: 'app/images/sprite/*.png',
   clean: ['dist', '.tmp'],

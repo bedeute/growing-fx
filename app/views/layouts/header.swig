@@ -1,14 +1,20 @@
 <header class="header">
+  {% include "top-nav-menu.swig" %}
+
   <div class="container">
-    <div class="top-tiny">
-      <ul class="list-inline pull-right">
-        <li><a href="#">Open Live Account</a></li>
-        <li>|</li>
-        <li><a href="#">Latest News</a></li>
-        <li>|</li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
+    <div class="showcase">
+      <div class="row">
+        <div class="col-xs-12 col-sm-5 showcase-pic">
+          <img src="images/robot-with-laptop.png" alt="Robot with Laptop">
+        </div>
+        <div class="col-xs-12 col-sm-7 text-center showcase-body">
+          <h1>Growing FX Automatic Trading</h1>
+          <p>
+            The Immortal Proven FX Winning Formula implemented on "Fully Auto Trading" to earn GOOD PROFIT and PIP REBATE
+          </p>
+          <button type="button" class="btn btn-primary btn-lg">Open Live Account</button>
+        </div>
+      </div>
     </div>
   </div>
-  <hr>
 </header> <!--/.header-->

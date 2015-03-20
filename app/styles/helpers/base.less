@@ -1,9 +1,161 @@
 body {
-  color: #f9f9f9;
+  color: #555;
+  background-color: #f9f9f9;
   font-family: @base-font-family;
 }
 
+// dive
+// for better vertical alignment
+//---------------------------
+.dive {
+  display: table;
+  width: 100%;
+
+  > .pull-right {
+    display: table-cell;
+    vertical-align: top;
+    margin-left: 20px;
+  }
+
+  > .dive-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.spacing {
+  height: 50px;
+}
+
+.separator {
+  text-align: center;
+  position: relative;
+
+  &:before {
+    content: '';
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: block;
+  }
+}
+
+.separator-inner {
+  position: relative;
+  display: inline-block;
+  padding: 2px;
+  background-color: @accent-main;
+  border-radius: 50px;
+  vertical-align: middle;
+  color: #fff;
+  padding-right: 30px;
+  font-family: 'roboto';
+  font-size: 24px;
+  font-weight: 300;
+  border: 8px solid #f9f9f9;
+  margin-bottom: 10px;
+
+  > span {
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 5px;
+
+    > i {
+      min-height: 45px;
+      line-height: 45px;
+      color: @accent-main;
+      vertical-align: middle;
+    }
+  }
+}
+
+
 .wrap {
-  background: #111 url(/images/header-bg.jpg) top center;
-  .background-size(cover);
+}
+
+.main-wrap {
+  background-color: #f9f9f9;
+  min-height: 300px;
+  position: relative;
+}
+
+.live-ticker {
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+  background-color: #eee;
+  .box-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+
+  .col-sm-8 {
+    padding-left: 60px;
+  }
+}
+
+.wisey {
+  height: 90px;
+  background-color: @accent-main;
+  margin-left: 50px;
+  padding-left: 100px;
+
+  .dive-body {
+    text-align: right;
+    color: #fff;
+
+    h3 {
+      margin: 2px 0 4px;
+      font-weight: 200;
+    }
+
+    span {
+      font-family: serif;
+    }
+  }
+}
+
+.fx-package {}
+
+.seal {
+  padding: 2px 2px 2px 8px;
+  margin-left: 2px;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  border-radius: 6px;
+
+  &:before {
+    content: '';
+    background: transparent url(../images/seal-sprite.png) center top;
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: -6px;
+  }
+
+  &-silver {
+    background-color: #7b8ea5;
+    color: #fff;
+  }
+
+  &-gold {
+      background-color: #E3C212;
+
+    &:before {
+      background-position: 0 -32px;
+    }
+  }
+
+  &-platinum {
+    background-color: #dedede;
+
+    &:before {
+      background-position: 0 32px;
+    }
+  }
 }
