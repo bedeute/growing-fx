@@ -1,14 +1,24 @@
 .header {
-  background: #111 url(/images/header-bg.jpg) top center;
-  .background-size(cover);
-  height: 430px;
 
-  > .container{overflow: hidden;}
+
+  &.landing-page {
+    background: #111 url(/images/header-bg.jpg) top center;
+    .background-size(cover);
+    height: 430px;
+
+    > .container{overflow: hidden;}
+
+    hr {
+      margin: 0;
+      border-top: 1px solid #060606;
+      border-bottom: 1px solid #1a1a1a;
+    }
+  }
 
   hr {
     margin: 0;
-    border-top: 1px solid #060606;
-    border-bottom: 1px solid #1a1a1a;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
   }
 }
 
@@ -16,8 +26,6 @@
   &:extend(.clearfix all);
   height: 32px;
   padding: 12px 0;
-  background-color: #111;
-
 
   > .container > .list-inline {
     font-size: 11px;
@@ -26,19 +34,72 @@
     > li {
 
       > a {
-        color: #fff;
+        color: #777;
+      }
+    }
+  }
+
+  .landing-page &{
+    background-color: #111;
+
+
+
+    > .container > .list-inline {
+
+      > li {
+
+        > a {
+          color: #fff;
+        }
       }
     }
   }
 }
 
 .top-navbar {
-  #gradient > .vertical(#111, transparent);
-  height: 200px;
-  margin-bottom: -100px;
+  border-bottom: 1px solid #eee;
+  .box-shadow(0 1px #fff);
+
+  .landing-page & {
+    .box-shadow(0 1px transparent);
+    #gradient > .vertical(#111, transparent);
+    height: 200px;
+    margin-bottom: -100px;
+    border-bottom-color: transparent;
+
+      > .container > .navbar {
+
+        > .collapse {
+
+          > .navbar-right {
+            list-style: none;
+
+            li {
+
+              > a {
+                color: #ccc;
+
+                &:hover,
+                &:focus {
+                  background-color: transparent;
+                  color: #eee;
+
+                  span {
+                    color: #999;
+                  }
+                }
+
+              }
+
+            }
+
+          }
+        }
+      }
+    }
 
   > .container > .navbar {
-
+    margin-bottom: 4px;
 
     > .collapse {
 
@@ -55,7 +116,7 @@
           }
 
           > a {
-            color: #ccc;
+            color: #555;
             padding-right: 20px;
             padding-left: 20px;
             font-family: @roboto;
@@ -64,15 +125,17 @@
             &:hover,
             &:focus {
               background-color: transparent;
-              color: #eee;
+              color: #222;
 
               > label {
                 text-decoration: underline;
                 cursor: inherit;
+                .transition(all 0.18s ease-in-out);
               }
 
               span {
                 color: #999;
+                .transition(all 0.18s ease-in-out);
               }
             }
 

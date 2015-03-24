@@ -9,6 +9,11 @@
       "title": "Growingfx :: Home",
       "description": "Awesome project.",
       "keywords": "html5, css3, Growingfx"
+    },
+    "features": {
+      "title": "Growingfx :: Features",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Growingfx"
     }
   }
 }
