@@ -27,10 +27,10 @@
       </div>
       <div class="collapse navbar-collapse" id="top-navbar-menu">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active text-center"><a href="index.html"><label>Auto Trader</label><span>EA Introduction</span></a></li>
-          <li class="text-center"><a href="features.html"><label>EA Feature</label><span>GrowingFX Autobot</span></a></li>
-          <li class="text-center"><a href="automator.html"><label>FX Automator</label><span>Trade Copier Solution</span></a></li>
-          <li class="text-center"><a href="partnership.html"><label>Partnership</label><span>For Affiliate Partnership</span></a></li>
+          <li class="active text-center"><a href="#auto-trader"><label>Auto Trader</label><span>EA Introduction</span></a></li>
+          <li class="text-center"><a href="#ea-feature"><label>EA Feature</label><span>GrowingFX Autobot</span></a></li>
+          <li class="text-center"><a href="#fx-automator"><label>FX Automator</label><span>Trade Copier Solution</span></a></li>
+          <li class="text-center"><a href="#partnership"><label>Partnership</label><span>For Affiliate Partnership</span></a></li>
         </ul>
       </div>
     </nav>

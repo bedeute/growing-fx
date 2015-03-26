@@ -1,4 +1,4 @@
-<header class="header landing-page">
+<header class="header landing-page" >
   {% include "top-nav-menu-landing-page.swig" %}
 
   <div class="container">

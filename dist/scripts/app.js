@@ -12,3 +12,9 @@
   });
 
 })(jQuery);
+
+$('#navbar-light').affix({
+    offset: {
+      top:450
+    }
+});
