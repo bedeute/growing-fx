@@ -11,10 +11,26 @@
 
   });
 
+  $('#navbar-light').affix({
+      offset: {
+        top:450
+      }
+  });
+
+  var cok = 120;
+
+  $('body').scrollspy({
+    target: '#nav',
+    offset: cok
+
+  });
+
+  /* smooth scrolling for nav sections */
+  $('#nav .navbar-nav li>a').click(function(){
+    var link = $(this).attr('href');
+    var posi = $(link).offset().top-140;
+    $('body,html').animate({scrollTop:posi},700);
+  })
+
 })(jQuery);
 
-$('#navbar-light').affix({
-    offset: {
-      top:450
-    }
-});

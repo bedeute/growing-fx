@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="container" id="auto-trader">
+    <div class="container">
       <div class="col-sm-9 col-sm-offset-3">
         <div class="wisey">
           <div class="dive">
@@ -45,7 +45,7 @@
       ============================================================ -->
       <div class="container">
         <div class="page-header">
-          <h1 class="text-center">Auto Trader<br><small>EA Introduction </small></h1>
+          <h1 class="text-center" id="auto-trader">Auto Trader<br><small>EA Introduction </small></h1>
         </div>
         <div class="separator">
           <div class="separator-inner">
@@ -119,10 +119,10 @@
       </div>
       <!-- EA Features
       ============================================================ -->
-      <div class="spacing" id="ea-feature">&nbsp;</div>
+      <div class="spacing">&nbsp;</div>
       <div class="container">
         <div class="page-header">
-          <h1 class="text-center"> EA Feature<br><small>GrowingFX Autobot</small></h1>
+          <h1 class="text-center" id="ea-feature"> EA Feature<br><small>GrowingFX Autobot</small></h1>
         </div>
         <h1 class="text-center">Dracula Expert Advisor Features :</h1>
         <div class="spacing">&nbsp;</div>
@@ -173,10 +173,10 @@
       </div>
       <!-- FX Automator
       ============================================================ -->
-      <div class="spacing" id="fx-automator">&nbsp;</div>
+      <div class="spacing">&nbsp;</div>
       <div class="container">
         <div class="page-header">
-          <h1 class="text-center"> FX Automator<br><small>Trade Copier Solution</small></h1>
+          <h1 class="text-center" id="fx-automator"> FX Automator<br><small>Trade Copier Solution</small></h1>
         </div>
         <div class="text-center">
           <img src="images/trade-copier-sim.png" alt="Trade Copier">
@@ -225,10 +225,10 @@
       </div>
       <!-- FX Automator
       ============================================================ -->
-      <div class="spacing" id="partnership">&nbsp;</div>
+      <div class="spacing">&nbsp;</div>
       <div class="container">
         <div class="page-header">
-          <h1 class="text-center"> Partnership<br><small>For Affiliate Partnership</small></h1>
+          <h1 class="text-center" id="partnership"> Partnership<br><small>For Affiliate Partnership</small></h1>
         </div>
         <div class="row">
           <div class="col-xs-12 col-sm-5">

@@ -1,7 +1,7 @@
 .header {
 
   &.landing-page {
-    background: #111 url(/images/header-bg.jpg) top center;
+    background: #111 url(../images/header-bg.jpg) top center;
     .background-size(cover);
     height: 430px;
 
@@ -59,6 +59,9 @@
 .top-navbar {
   // border-bottom: 1px solid #eee;
   // .box-shadow(0 1px #fff);
+  z-index: 23;
+  #gradient > .vertical(#f9f9f9, transparent, 60%, 100%);
+  height: 100px;
 
   .landing-page & {
     .box-shadow(0 1px transparent);
@@ -107,6 +110,14 @@
         list-style: none;
 
         li {
+
+          &.active > a,
+          & > a:active {
+
+            > label {
+              text-decoration: underline;
+            }
+          }
 
           &:last-child {
 
@@ -226,11 +237,13 @@
 
   &.affix-top {
     position: fixed;
-    top: -160px;
+    top: -200px;
     width: 100%;
+    opacity: 0;
   }
 
   &.affix {
+    opacity: 1;
     top: 0;
     width: 100%;
 
@@ -241,13 +254,6 @@
       margin: 0;
       border-top: 1px solid #eee;
       border-bottom: 1px solid #fff;
-    }
-
-    > .top-navbar {
-      z-index: 23;
-      #gradient > .vertical(#f9f9f9, transparent, 60%, 100%);
-      height: 100px;
-
     }
   }
 }
