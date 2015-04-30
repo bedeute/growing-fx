@@ -11,7 +11,7 @@
 
   });
 
-  $('#navbar-light').affix({
+  $('#navbar-lite').affix({
       offset: {
         top:450
       }
@@ -20,8 +20,7 @@
   var cok = 120;
 
   $('body').scrollspy({
-    target: '#nav',
-    offset: cok
+    target: '#nav'
 
   });
 

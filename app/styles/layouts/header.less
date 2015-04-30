@@ -25,7 +25,6 @@
   &:extend(.clearfix all);
   height: 32px;
   padding: 12px 0;
-  background-color: #f9f9f9;
 
   > .container > .list-inline {
     font-size: 11px;
@@ -57,10 +56,7 @@
 }
 
 .top-navbar {
-  // border-bottom: 1px solid #eee;
-  // .box-shadow(0 1px #fff);
   z-index: 23;
-  #gradient > .vertical(#f9f9f9, transparent, 60%, 100%);
   height: 100px;
 
   .landing-page & {
@@ -231,9 +227,10 @@
   }
 }
 
-#navbar-light {
+#navbar-lite {
   z-index: 22;
   .transition(all 0.26s ease);
+  background: #111 url(../images/header-bg.jpg) bottom center;
 
   &.affix-top {
     position: fixed;
@@ -248,12 +245,45 @@
     width: 100%;
 
     > .top-tiny-navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding-top: 10px;
+    }
+
+    > .top-navbar {
+      background-color: rgba(0, 0, 0, 0.7);
+      height: 50px;
+
+      .navbar-brand {
+        width: 160px;
+        height: auto;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .nav.navbar-nav {
+
+        a {
+          padding-top: 12px;
+          padding-bottom: 12px;
+          color: #aaa;
+
+          &:hover,
+          &:focus {
+            color: @accent-main;
+            text-decoration: inherit;
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
     }
 
     > hr {
       margin: 0;
-      border-top: 1px solid #eee;
-      border-bottom: 1px solid #fff;
+      border-top: 1px solid #0c0c0c;
+      border-bottom: 1px solid #292929;
     }
   }
 }

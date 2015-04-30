@@ -37,7 +37,7 @@
         </div>
       </div>
     </div>
-    <div id="navbar-light">
+    <div id="navbar-lite">
       {% include "layouts/top-nav-menu.swig" %}
     </div>
     <div class="spacing">&nbsp;</div>
