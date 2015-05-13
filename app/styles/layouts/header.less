@@ -247,6 +247,16 @@
     > .top-tiny-navbar {
       background-color: rgba(0, 0, 0, 0.7);
       padding-top: 10px;
+
+      .list-inline.pull-right {
+
+        li {
+
+          a {
+            color: #ddd;
+          }
+        }
+      }
     }
 
     > .top-navbar {
@@ -257,6 +267,8 @@
         width: 160px;
         height: auto;
         padding-top: 8px;
+        position: absolute;
+        top: -28px;
         padding-bottom: 8px;
       }
 
@@ -265,11 +277,10 @@
         a {
           padding-top: 12px;
           padding-bottom: 12px;
-          color: #aaa;
+          color: #ddd;
 
           &:hover,
           &:focus {
-            color: @accent-main;
             text-decoration: inherit;
           }
 

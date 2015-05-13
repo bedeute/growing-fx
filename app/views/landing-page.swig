@@ -57,6 +57,8 @@
 
   <!-- @if NODE_ENV == 'DISTRIBUTION' -->
   <script src="scripts/app.all.min.js"></script>
+  <!--app:js-->
+  <!--/app:js-->
   <!-- @endif -->
 </body>
 
